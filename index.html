@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red Bus Ticketing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Red Bus Ticketing</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" style="background-color: rgb(232, 219, 219);">
+      <h2>About Us</h2>
+      <p>We are a leading online bus ticket booking platform in India.</p>
+    </section>
+    <section id="services" style="background-color: lightgray;">
+      <h2>Services</h2>
+      <ul>
+        <li>Online bus ticket booking</li>
+        <li>Route and schedule information</li>
+        <li>Seat selection and booking</li>
+        <li>Cancellation and refund</li>
+      </ul>
+    </section>
+    <section id="contact" style="background-color: lightyellow;">
+      <h2>Contact Us</h2>
+      <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Submit" style="background-color: lightgreen;">
+      </form>
+    </section>
+    <section id="booking" style="background-color: lightpink;">
+      <h2>Book Your Ticket</h2>
+      <form action="book.php" method="post">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from">
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <input type="submit" value="Search Buses" style="background-color: lightcoral;">
+      </form>
+    </section>
+  </main>
+  <footer style="background-color: lightgray;">
+    <p>Copyright &copy; Red Bus 2022</p>
+  </footer>
+</body>
+</html>
+
+<style>
+  header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+  }
